@@ -1,0 +1,19 @@
+DATASET:
+  NUM_CLASSES: 31
+  DATAROOT: './experiments/dataset/Office-31'
+  SOURCE_NAME: 'webcam'
+  TARGET_NAME: 'amazon'
+
+MODEL:
+  FEATURE_EXTRACTOR: 'resnet50'
+
+TRAIN:
+  SOURCE_BATCH_SIZE: 32
+  TARGET_BATCH_SIZE: 32
+
+TEST:
+  BATCH_SIZE: 30
+
+EVAL_METRIC: "accuracy"
+SAVE_DIR: "./experiments/ckpt"
+NUM_WORKERS: 8

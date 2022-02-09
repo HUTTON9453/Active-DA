@@ -1,0 +1,16 @@
+DATASET:
+  NUM_CLASSES: 65
+  DATAROOT: './experiments/dataset/OfficeHome'
+
+MODEL:
+  FEATURE_EXTRACTOR: 'resnet50'
+
+TEST:
+  BATCH_SIZE: 50
+  DOMAIN: "Clipart"
+
+EVAL_METRIC: "accuracy"
+SAVE_DIR: "./experiments/ckpt"
+NUM_WORKERS: 8
+# set the path to the trained model here
+WEIGHTS: "/home/hutton0816/Contrastive-Adaptation-Network-for-Unsupervised-Domain-Adaptation/experiments/ckpt/officehome_a2c_1126/ckpt_184_923.weights"

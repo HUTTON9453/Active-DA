@@ -1,0 +1,42 @@
+DATASET:
+  NUM_CLASSES: 10
+  DATAROOT: './experiments/dataset/Logit'
+  SOURCE_NAME: 'svhn'
+  TARGET_NAME: 'mnist'
+
+DATA_TRANSFORM:
+  RESIZE_OR_CROP: ''
+  LOADSIZE: 32
+  FINESIZE: 32
+  FLIP: False
+  NORMALIZE_MEAN: [0.5, 0.5, 0.5]
+  NORMALIZE_STD: [0.5, 0.5, 0.5]
+
+MME:
+  FIRST_MAX_EPOCH : 60
+  MAX_EPOCH : 60
+  lambda_h : 1.0
+  lambda_s : 0.1
+  lambda_t : 1.0
+  
+MODEL:
+  FEATURE_EXTRACTOR: 'LeNet'
+  
+FINETUNE:
+  NUM_QUERY: 10
+
+TRAIN:
+  SOURCE_BATCH_SIZE: 200
+  TARGET_BATCH_SIZE: 200
+  BASE_LR: 0.0002
+  LR_SCHEDULE: 'fix'
+  LR_UPDATE_LOOP: 20
+  LR_MULT: 0.5
+
+TEST:
+  BATCH_SIZE: 30
+  DOMAIN: 'mnist'
+
+EVAL_METRIC: "accuracy"
+SAVE_DIR: "./experiments/ckpt"
+NUM_WORKERS: 8

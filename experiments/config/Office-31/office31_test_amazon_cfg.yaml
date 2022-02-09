@@ -1,0 +1,19 @@
+DATASET:
+  NUM_CLASSES: 31
+  DATAROOT: './experiments/dataset/Office-31'
+
+MODEL:
+  FEATURE_EXTRACTOR: 'resnet50'
+
+TEST:
+  BATCH_SIZE: 50
+  DOMAIN: "amazon"
+
+EVAL_METRIC: "accuracy"
+SAVE_DIR: "./experiments/ckpt"
+NUM_WORKERS: 8
+# set the path to the trained model here
+#WEIGHTS: "/tmp2/hutton/domain_adaptation_learning/Contrastive-Adaptation-Network-for-Unsupervised-Domain-Adaptation/experiments/ckpt/perfect/office31_w2a_perfect/ckpt_best.weights"
+#WEIGHTS: "/tmp2/hutton/domain_adaptation_learning/Contrastive-Adaptation-Network-for-Unsupervised-Domain-Adaptation/experiments/ckpt/office31_ACAN_Improve_Clustering/office31_w2a_acanimproveclustering_1126/ckpt_48_2903.weights"
+#WEIGHTS: "/tmp2/hutton/domain_adaptation_learning/Contrastive-Adaptation-Network-for-Unsupervised-Domain-Adaptation/experiments/ckpt/office31_ACAN/office31_w2a_unfreezefc_test_split_opt_addeval_1126/ckpt_49_2970.weights"
+WEIGHTS: "/tmp2/hutton/domain_adaptation_learning/Contrastive-Adaptation-Network-for-Unsupervised-Domain-Adaptation/experiments/ckpt/office31_Active_Learning_for_Finetune/office31_w2a_5_freezefc_MARGIN_SAMPLING/ckpt_finetune.weights"
