@@ -17,4 +17,4 @@
 ./experiments/img/decision_boundary/*
 ./experiments/img/tsne/*
 ./experiments/runs/*
-./img
+./img/*
