@@ -18,5 +18,5 @@
 ./experiments/img/count_bar/*
 ./experiments/img/decision_boundary/*
 ./experiments/img/tsne/*
-./experiments/runs/*
+experiments/runs/*
 ./img/*
