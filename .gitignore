@@ -12,6 +12,8 @@
 ./experiments/dataset/Office-31/*
 ./experiments/dataset/OfficeHome
 ./experiments/dataset/VisDA-2017
+./experiments/dataset/OfficeHome/*
+./experiments/dataset/VisDA-2017/*
 ./experiments/img/confusion_matix/*
 ./experiments/img/count_bar/*
 ./experiments/img/decision_boundary/*
