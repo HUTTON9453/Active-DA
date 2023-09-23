@@ -59,11 +59,11 @@ bike_helmet
 
 ## Training
 ```
-./experiments/scripts/train.sh ${config_yaml} ${gpu_ids} ${dataset} ${active_learning_method} ${experiment_name} ${seed}
+./experiments/scripts/train.sh ${config_yaml} ${gpu_ids} ${domain_adaptation_solver} ${dataset} ${active_learning_method} ${experiment_name} ${seed}
 ```
 For example, for the Office-31 dataset,
 ```
-./experiments/scripts/train.sh ./experiments/config/Office-31/MME/office31_train_amazon2dslr_cfg.yaml 0 office31 OurSampling office31_a2d 1126
+./experiments/scripts/train.sh ./experiments/config/Office-31/MME/office31_train_amazon2dslr_cfg.yaml 0 CAN office31 OurSampling office31_a2d 1126
 ```
 
 The experiment log file and the saved checkpoints will be stored at ./experiments/ckpt/${experiment_name}
